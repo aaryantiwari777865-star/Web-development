@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#174c50">
+    <meta name="description" content="Experience warm Indian hospitality, lakeside rooms and local flavours at Hotel Spark in Bhopal, Madhya Pradesh.">
+    <title>Hotel Spark | A lakeside stay in Bhopal</title>
+    <link rel="stylesheet" href="HOTELWEB.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "@floating-ui/dom": "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.8.0/+esm",
+                "vanilla-calendar-pro": "https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.4.0/+esm"
+            }
+        }
+    </script>
+    <script type="module" src="HOTELWEB.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand bg-1" aria-label="Main navigation">
+            <div class="site-container nav-inner">
+                <a class="navbar-brand hotel-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span>Hotel Spark </a>
+                <div class="nav-overflow" data-bs-toggle="nav-overflow">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stay">Our rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experiences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#story">Our story</a></li>
+                        <li class="nav-item"><a class="nav-link nav-book" href="#book">Book a stay <span aria-hidden="true">↗</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-art" aria-hidden="true">
+                <div class="sun"></div>
+                <div class="hill hill-back"></div>
+                <div class="hill hill-front"></div>
+                <div class="sea"></div>
+                <div class="villa">
+                    <div class="villa-roof"></div>
+                    <div class="villa-body"><span></span><span></span><span></span><span class="villa-door"></span></div>
+                </div>
+                <div class="scene-palm palm-one"><i></i><b></b></div>
+                <div class="scene-palm palm-two"><i></i><b></b></div>
+            </div>
+            <div class="site-container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span> NAMASTE FROM BHOPAL</p>
+                    <h1>Find your calm<br>by the <em>lake.</em></h1>
+                    <p class="hero-description">A warm welcome, the gentle shimmer of Upper Lake, and all the little comforts that make India feel like home.</p>
+                    <a class="primary-link" href="#stay">Explore your stay <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-caption"><span>23° 14' N &nbsp; 77° 24' E</span><span>BHOPAL, MADHYA PRADESH</span></div>
+            </div>
+            <span class="hero-sticker" aria-hidden="true">SWAGATAM<br>BHOPAL<br><b>✳</b></span>
+        </section>
+
+        <section class="booking-bar site-container" id="book" aria-label="Plan your stay">
+            <form action="#stay" method="get" class="booking-form row g-3 align-items-end">
+                <div class="col-6 col-md-3">
+                    <label class="form-label" for="arrival">CHECK IN</label>
+                    <input class="form-control" id="arrival" name="arrival" type="date" required>
+                </div>
+                <div class="col-6 col-md-3">
+                    <label class="form-label" for="departure">CHECK OUT</label>
+                    <input class="form-control" id="departure" name="departure" type="date" required>
+                </div>
+                <div class="col-6 col-md-2">
+                    <label class="form-label" for="guests">GUESTS</label>
+                    <select class="form-select" id="guests" name="guests">
+                        <option value="1">1 guest</option>
+                        <option value="2" selected>2 guests</option>
+                        <option value="3">3 guests</option>
+                        <option value="4">4 guests</option>
+                    </select>
+                </div>
+                <div class="col-6 col-md-4">
+                    <button class="btn book-button w-100" type="submit">Check availability <span aria-hidden="true">→</span></button>
+                </div>
+            </form>
+            <p class="booking-message text-center text-success small mt-3 mb-0" id="booking-message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="welcome section-space" id="story">
+            <div class="site-container welcome-grid">
+                <p class="eyebrow welcome-label">ATITHI DEVO BHAVA</p>
+                <div class="welcome-copy">
+                    <h2>Come as a guest.<br>Leave feeling like <em>family.</em></h2>
+                    <p>At Hotel Spark, hospitality is in the little things: a fresh cup of chai, a warm welcome at the door, and time to take in the peaceful beauty of Bhopal.</p>
+                    <a class="quiet-link" href="#experience">Discover Bhopal <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="welcome-note" aria-hidden="true"><span>SHUBH SWAGATAM</span><b>✳</b><span>FEEL AT HOME</span></div>
+            </div>
+        </section>
+
+        <section class="rooms section-space" id="stay">
+            <div class="site-container">
+                <div class="section-heading">
+                    <div><p class="eyebrow">A STAY WITH A SENSE OF PLACE</p><h2>Your Bhopal <em>home.</em></h2></div>
+                    <a class="page-button" href="rooms.html" target="_blank" rel="noopener">View room details <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="row g-4">
+                    <article class="col-md-4 room-card">
+                        <a class="room-visual room-garden" href="#book" aria-label="Choose the Bagh Room"><span class="room-window"></span><span class="room-bed"></span><span class="room-plant"></span></a>
+                        <div class="room-details"><div><h3>The Bagh Room</h3><p>A garden-side hideaway</p></div><span>FROM ₹6,500 / NIGHT</span></div>
+                    </article>
+                    <article class="col-md-4 room-card">
+                        <a class="room-visual room-sea" href="#book" aria-label="Choose the Jheel View Suite"><span class="room-window"></span><span class="room-bed"></span><span class="room-plant"></span></a>
+                        <div class="room-details"><div><h3>The Jheel View Suite</h3><p>Wake up beside Upper Lake</p></div><span>FROM ₹9,000 / NIGHT</span></div>
+                    </article>
+                    <article class="col-md-4 room-card">
+                        <a class="room-visual room-hideaway" href="#book" aria-label="Choose the Jharokha Suite"><span class="room-window"></span><span class="room-bed"></span><span class="room-plant"></span></a>
+                        <div class="room-details"><div><h3>The Jharokha Suite</h3><p>Room to gather and unwind</p></div><span>FROM ₹12,000 / NIGHT</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section-space" id="experience">
+            <div class="site-container experience-grid">
+                <div>
+                    <p class="eyebrow">LITTLE MOMENTS, LOCAL FLAVOUR</p>
+                    <h2>Feel the warmth<br>of <em>Bhopal.</em></h2>
+                    <p>Watch the sun set over Upper Lake, wander through the old city, then come back to a cup of chai and the comfort of a place that feels like yours.</p>
+                    <div class="page-actions">
+                        <a class="primary-link" href="#book">Plan your Bhopal stay <span aria-hidden="true">→</span></a>
+                        <a class="page-button" href="bhopal-guide.html" target="_blank" rel="noopener">Open Bhopal guide <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+                <div class="amenities">
+                    <article><span>01</span><h3>Chai, your way</h3><p>Freshly brewed masala chai, whenever you like.</p></article>
+                    <article><span>02</span><h3>Bhopali breakfasts</h3><p>Local favourites and a leisurely start to the day.</p></article>
+                    <article><span>03</span><h3>City of lakes</h3><p>Easy access to Upper Lake and the old city.</p></article>
+                    <article><span>04</span><h3>Thoughtful hospitality</h3><p>Small comforts, warm service, and room to relax.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="guest-note section-space">
+            <p class="eyebrow">A NOTE FROM A RECENT GUEST</p>
+            <blockquote>Bhopal ki shaam, garam chai aur apno jaisi mehmaan-nawazi - Hotel Spark mein har pal yaadgar bana.</blockquote>
+            <p class="guest-name">ROHIT BANSAL SIR <span aria-hidden="true">·</span> BHOPAL</p>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="site-container">
+            <div class="footer-main">
+                <div><a class="hotel-brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span> Hotel Spark</a><p>Warm hospitality by the waters of Bhopal.</p></div>
+                <div><p class="eyebrow">COME FIND US</p><p>Nehru Nagar<br>Bhopal, Madhya Pradesh, India</p></div>
+                <div><p class="eyebrow">SAY HELLO</p><a href="mailto:hello@hotelspark.example">hello@hotelspark.example ↗</a></div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HOTEL SPARK</span><span class="rohit-credit">FOR ROHIT SIR</span><a href="#home">BACK TO TOP ↑</a></div>
+        </div>
+    </footer>
+</body>
+</html>
